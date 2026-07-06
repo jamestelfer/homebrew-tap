@@ -6,12 +6,12 @@ cask "imds-broker" do
     on_intel do
       url "https://github.com/jamestelfer/imds-broker/releases/download/v#{version}/imds-broker_darwin_amd64.tar.gz",
         verified: "github.com/jamestelfer/imds-broker"
-      sha256 "713678294fe0476c5dc517ad258378e4e785152a15d28ca9d7431cf30e73d3fe"
+      sha256 "6791856a408b89e55c48a1388ae92829ad5691940e448a541c7b78d449166d5c"
     end
     on_arm do
       url "https://github.com/jamestelfer/imds-broker/releases/download/v#{version}/imds-broker_darwin_arm64.tar.gz",
         verified: "github.com/jamestelfer/imds-broker"
-      sha256 "daa9dd29b4a87debcf766013a2729264d13eef12c1b7e57de0b4145de3b2c2de"
+      sha256 "7c7dd1a9565a109547403a0083b889280fcb08e443c99d47688db44b80e32353"
     end
   end
 
@@ -19,12 +19,12 @@ cask "imds-broker" do
     on_intel do
       url "https://github.com/jamestelfer/imds-broker/releases/download/v#{version}/imds-broker_linux_amd64.tar.gz",
         verified: "github.com/jamestelfer/imds-broker"
-      sha256 "a20a1923f5813b59bc6573efb75629e25a565ae1dba5e19a538c0ae6422d032b"
+      sha256 "981bf9d0cc261b22fdb14df9feca2968af849972f68237fd2f518eb9d2ece09a"
     end
     on_arm do
       url "https://github.com/jamestelfer/imds-broker/releases/download/v#{version}/imds-broker_linux_arm64.tar.gz",
         verified: "github.com/jamestelfer/imds-broker"
-      sha256 "bed68a00d10f575c539a99d26e537737e7754f196896d6f39e4076d03685ce8c"
+      sha256 "b7226cba7461ac8c074dd2ab65fe4ae3cd5df402cc087b928b9e4689022eba9e"
     end
   end
 
