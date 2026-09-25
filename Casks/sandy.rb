@@ -4,26 +4,22 @@ cask "sandy" do
 
   on_macos do
     on_intel do
-      url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-darwin-x64.tar.gz",
-        verified: "github.com/jamestelfer/sandy"
+      url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-darwin-x64.tar.gz"
       sha256 "8f6ceed54ee293f38286bdc0a9799263697123f77c16464d29daef657df1b362"
     end
     on_arm do
-      url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-darwin-arm64.tar.gz",
-        verified: "github.com/jamestelfer/sandy"
+      url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-darwin-arm64.tar.gz"
       sha256 "563885e4a85e877c3d34ee4fd666d0ca45d498b0a22cdffff921769559095a9e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-linux-x64.tar.gz",
-        verified: "github.com/jamestelfer/sandy"
+      url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-linux-x64.tar.gz"
       sha256 "1b7c2e0102b45b57a116a638a48ec619c28c55bf86ceac01d784116530ef8e38"
     end
     on_arm do
-      url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-linux-arm64.tar.gz",
-        verified: "github.com/jamestelfer/sandy"
+      url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-linux-arm64.tar.gz"
       sha256 "c33afc17cd408081f1c8e13788843d8db98aba0a2ae588727b868128793865a6"
     end
   end
@@ -38,11 +34,11 @@ cask "sandy" do
 
   binary "sandy"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/sandy"]
-      system_command "/usr/bin/codesign", args: ["--remove-signature", "#{staged_path}/sandy"], print_stderr: false, must_succeed: false
-      system_command "/usr/bin/codesign", args: ["-s", "-", "--force", "#{staged_path}/sandy"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/sandy"]
+      run "/usr/bin/codesign", args: ["--remove-signature", "{{staged_path}}/sandy"], print_stderr: false, must_succeed: false
+      run "/usr/bin/codesign", args: ["-s", "-", "--force", "{{staged_path}}/sandy"]
     end
   end
 
