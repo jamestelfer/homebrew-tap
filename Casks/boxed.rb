@@ -6,25 +6,25 @@ cask "boxed" do
     end
   end
 
-  version "1.3.1"
+  version "1.3.2"
 
   on_macos do
     on_arm do
-      sha256 "69e036f8aca795f84bb0950bd469ec39bfba218cb6265bd66f60a0c4c5c0618f"
+      sha256 "dd107dacc01b6bddd00663041e178748ebb0b65c53aa31e998df9cd4195840d4"
       url "https://github.com/jamestelfer/boxed/releases/download/v#{version}/boxed_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3d4d60da8c0c15c93973ab00e79e6844b8157b6f3696a5da6cb50fe7e0e3e4a3"
+      sha256 "ea81c21f3a117e7713e5d0995cacb7c944eec8f9941b73f02102c601050f4f39"
       url "https://github.com/jamestelfer/boxed/releases/download/v#{version}/boxed_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "618c776f65c23d21aea83b440619e540fafda65b31a04254024ad688e806d4e8"
+      sha256 "8ef283e5b42f6efc718e3681ef587b1bcc609a6f72122e238ec06fdf5f3d866b"
       url "https://github.com/jamestelfer/boxed/releases/download/v#{version}/boxed_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e4613f4aff3644728d5def8476d6598424f08cdcd6c3bcca80113a7f7cb2338e"
+      sha256 "be01c3952911d7f26e3f5919fe3fb27f5097fc6b846585459c0bba48a9b20aa8"
       url "https://github.com/jamestelfer/boxed/releases/download/v#{version}/boxed_linux_amd64.tar.gz"
     end
   end
