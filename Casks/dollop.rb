@@ -6,25 +6,25 @@ cask "dollop" do
     end
   end
 
-  version "1.19.0"
+  version "1.20.0"
 
   on_macos do
     on_arm do
-      sha256 "921f067c1c957d25121b036099461426c3c1d521c958620aeaeb739a716f7dce"
+      sha256 "dfc5027cc8083943d5d81988cfab670192a2f4ae2b25a676cb200ce9c525c024"
       url "https://github.com/jamestelfer/dollop/releases/download/v#{version}/dollop_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "965207ef601d7085bec49e457117256575e6c62a746e06fc29ad6c124bb8fd8f"
+      sha256 "95542527ea289dad12dd3eb74a4fdb9a1838e0606575f885c357fa744ae56803"
       url "https://github.com/jamestelfer/dollop/releases/download/v#{version}/dollop_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "e543ed448ce85df57b3c8c581fd86672cfb3e90a8349092c322056cb1c182582"
+      sha256 "f42d31c1a56fcbc96d0d6befbc23cc2f0771f81d6d209f7b64361627b9703091"
       url "https://github.com/jamestelfer/dollop/releases/download/v#{version}/dollop_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "fd3242ea96d5e32d2734ecb81518901e14761c2a7a113252d32c68f60cdd2e16"
+      sha256 "a01f7cc4a4ccf0ae89d86b160cc940b7e8538e0d56cfb3eb61f718a0ef63cb70"
       url "https://github.com/jamestelfer/dollop/releases/download/v#{version}/dollop_linux_amd64.tar.gz"
     end
   end
