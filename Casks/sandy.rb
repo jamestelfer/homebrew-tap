@@ -8,25 +8,25 @@ cask "sandy" do
     end
   end
 
-  version "0.13.0"
+  version "0.14.0"
 
   on_macos do
     on_arm do
-      sha256 "9c24afc33378ad2c2b8b3a6c2833df0306890075798021df071b691d6b4b87aa"
+      sha256 "013098a16bf39729aeb4a1dffbad72bee25be428b6d91b3142d0e6910f851aa1"
       url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "fab7f40137cbf1f0469c85f2bfc5e47d1cca35e8c6bf20a96f12846ca40bab37"
+      sha256 "783ad7f6505f3c3df6e5bbb53ecd9e5fdaf91222f91c4e1338841ee74b37be9b"
       url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-darwin-x64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "c90421a9233171fc5312148a7216e649b10f6e7f6b1b728d21d5d75c67e56c85"
+      sha256 "02872cd74ef8dbbfd178f854526337c04af04dea4ddc661d2c2e3fef3e1fc837"
       url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "4a7c5b17ae7660347b2c7968278bd7aa62284bc5f3f40c7e360fc7731fc663e7"
+      sha256 "adafef27d50e5d59044fe2a8fd56be95befeb98094cdcfb3a786b45c3ab8df78"
       url "https://github.com/jamestelfer/sandy/releases/download/v#{version}/sandy-#{version}-linux-x64.tar.gz"
     end
   end
