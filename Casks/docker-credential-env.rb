@@ -6,25 +6,25 @@ cask "docker-credential-env" do
     end
   end
 
-  version "1.0.3"
+  version "1.0.4"
 
   on_macos do
     on_arm do
-      sha256 "48c6e7ecf5cc73f745ed8ebecb1002d4a1d6398237087ea99270467dea05e2dd"
+      sha256 "02bf3b88d74f2a82c1a4f1e6de00da04ef369137692bb7badb5ab7237cd58bdf"
       url "https://github.com/jamestelfer/docker-credential-env/releases/download/v#{version}/docker-credential-env_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "22e4c009a82983866bffeb6708365fe20b38e7ea98406fa13b2fec9ac03ad987"
+      sha256 "146584c4c39e3df14a90093e8c9822d0dcdd4d3026556e757e91f8b4c2844b4a"
       url "https://github.com/jamestelfer/docker-credential-env/releases/download/v#{version}/docker-credential-env_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "51e82c05ba98fad49ea9dbf1870801bcb02a35387050df5c1d498496f295e9ff"
+      sha256 "942e3ef143668961a3280c78b048224e2c1d2a6f324931f7fb0d9989a46fd0b6"
       url "https://github.com/jamestelfer/docker-credential-env/releases/download/v#{version}/docker-credential-env_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "72e3ab5948d4254acc1bf4d0373257b53391dc2ed4a90c39fd2accd10718a6bd"
+      sha256 "2cc5bf7318586365fbb48e6a6a9c2be49dfac181364920d88a32145fbcbbb693"
       url "https://github.com/jamestelfer/docker-credential-env/releases/download/v#{version}/docker-credential-env_linux_amd64.tar.gz"
     end
   end
