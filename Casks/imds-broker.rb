@@ -6,25 +6,25 @@ cask "imds-broker" do
     end
   end
 
-  version "0.5.1"
+  version "0.5.2"
 
   on_macos do
     on_arm do
-      sha256 "ff01af0d2c892e0df7f149ee7790bdc009d956faf92910eac5a3da24aecf4c9a"
+      sha256 "84c64577f55bde0f85919089a3e759a4b70e75dfcf3763614df2089600b772e4"
       url "https://github.com/jamestelfer/imds-broker/releases/download/v#{version}/imds-broker_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c82d3d3b52e8b6c9e93064e8559fc549c0fe46acce3d940b8583a4fc94a355e6"
+      sha256 "4ced83774098a004541a7b9f3607d9e05f1fe5e5af1b37c4fa9aeafdcddfaafa"
       url "https://github.com/jamestelfer/imds-broker/releases/download/v#{version}/imds-broker_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "92e2e464477b37a118ddd1f8a166778f10256e5cb01f7ba0316fbb060d1a6327"
+      sha256 "547c8d10dae8f93d768f82700238474c9b8f142b344bfaa7459d91953d71bcc8"
       url "https://github.com/jamestelfer/imds-broker/releases/download/v#{version}/imds-broker_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "460bba1a7f25a1083858d69588c857c8cf4cc31eb725c584a0465e60441c6fe2"
+      sha256 "f992551377cba0920a56fffc42995e240ce69c925a43cc9db53cead066e087f0"
       url "https://github.com/jamestelfer/imds-broker/releases/download/v#{version}/imds-broker_linux_amd64.tar.gz"
     end
   end
@@ -39,5 +39,5 @@ cask "imds-broker" do
 
   binary "imds-broker"
 
-  # No zap stanza required
+  zap :not_required
 end
